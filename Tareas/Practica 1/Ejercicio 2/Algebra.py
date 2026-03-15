@@ -30,3 +30,4 @@ if ecuacion.tieneSolucion():
     print("y =", ecuacion.getY())
 else:
     print("La ecuación no tiene solución")
+    
