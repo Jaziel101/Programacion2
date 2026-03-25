@@ -1,0 +1,39 @@
+body { 
+    font-family: Arial; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    background: #f5f5f5; 
+}
+.uml {
+    border: 2px solid #000; 
+    background: #fff; 
+    width: 340px; 
+    border-radius: 5px; 
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1); 
+}
+.uml .header { 
+    background: #e0e0e0; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 18px; 
+    padding: 10px; 
+    border-bottom: 2px solid #000; 
+}
+.uml .attrs, .uml .methods { 
+    padding: 10px; 
+    border-bottom: 2px solid #000; 
+}
+.uml .title { 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+.uml ul { 
+    margin: 0; 
+    padding-left: 20px; 
+}
+.uml li { 
+    list-style: none; 
+    margin: 5px 0; 
+}

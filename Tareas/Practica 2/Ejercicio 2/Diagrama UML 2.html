@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagrama UML - Clase AlgebraVectorial</title>
+    <link rel="stylesheet" href="Estilos 2/estilos2.css">
+</head>
+<body>
+    <div class="uml-class">
+        <div class="header">AlgebraVectorial</div>
+        <div class="attributes">
+            <div class="section-title">Atributos</div>
+            <ul>
+                <li>- x: float</li>
+                <li>- y: float</li>
+                <li>- z: float</li>
+            </ul>
+        </div>
+        <div class="methods">
+            <div class="section-title">Métodos</div>
+            <ul>
+                <li>+ AlgebraVectorial()</li>
+                <li>+ AlgebraVectorial(x: float, y: float, z: float)</li>
+                <li>+ perpendicular(a: AlgebraVectorial, b: AlgebraVectorial, metodo: int): bool</li>
+                <li>+ paralelo(a: AlgebraVectorial, b: AlgebraVectorial, metodo: int): bool</li>
+                <li>+ proyeccion(a: AlgebraVectorial, b: AlgebraVectorial): AlgebraVectorial</li>
+                <li>+ componente(a: AlgebraVectorial, b: AlgebraVectorial): float</li>
+                <li>+ get_x(): float</li>
+                <li>+ get_y(): float</li>
+                <li>+ get_z(): float</li>
+                <li>+ __add__(v): AlgebraVectorial</li>
+                <li>+ __sub__(v): AlgebraVectorial</li>
+                <li>+ __mul__(v): float (producto punto)</li>
+                <li>+ __xor__(v): AlgebraVectorial (producto cruz)</li>
+                <li>+ __abs__(): float (módulo)</li>
+                <li>+ __mul__(k: float): AlgebraVectorial (escalar)</li>
+                <li>+ __str__(): string</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
