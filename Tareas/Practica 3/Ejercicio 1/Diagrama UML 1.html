@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagrama UML - Juego Adivina Número</title>
+    <link rel="stylesheet" href="Estilos 1/estilos1.css">
+</head>
+<body>
+    <div class="uml-class">
+        <div class="header">Juego</div>
+        <div class="attributes">
+            <div class="section-title">Atributos</div>
+            <ul>
+                <li># numeroDeVidas: int</li>
+                <li># record: int</li>
+            </ul>
+        </div>
+        <div class="methods">
+            <div class="section-title">Métodos</div>
+            <ul>
+                <li>+ __init__(vidas: int)</li>
+                <li>+ reiniciaPartida(): void</li>
+                <li># actualizaRecord(): void</li>
+                <li># quitaVida(): bool</li>
+            </ul>
+        </div>
+        
+        <div class="inheritance-arrow">
+            ▲
+            <span style="font-size: 12px;">hereda</span>
+        </div>
+        
+        <div class="subclass">
+            <div style="font-weight: bold; margin-bottom: 10px;">JuegoAdivinaNumero</div>
+            <div class="attributes" style="padding: 10px 0;">
+                <div class="section-title">Atributos</div>
+                <ul>
+                    <li>- numeroAAdivinar: int</li>
+                </ul>
+            </div>
+            <div class="methods" style="padding: 10px 0;">
+                <div class="section-title">Métodos</div>
+                <ul>
+                    <li>+ __init__(vidas: int)</li>
+                    <li>+ juega(): void</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="margin-top: 20px; border-top: 2px solid #000; padding-top: 15px;">
+            <div style="font-weight: bold; margin-bottom: 10px;">Aplicacion</div>
+            <div class="attributes" style="padding: 10px 0;">
+                <div class="section-title">Atributos</div>
+                <ul>
+                    <li><em>(sin atributos)</em></li>
+                </ul>
+            </div>
+            <div class="methods" style="padding: 10px 0;">
+                <div class="section-title">Métodos</div>
+                <ul>
+                    <li>+ main(): void</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

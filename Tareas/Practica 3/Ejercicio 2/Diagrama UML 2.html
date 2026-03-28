@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagrama UML - Juegos de Adivinación</title>
+    <link rel="stylesheet" href="Estilos 2/estilos2.css">
+</head>
+<body>
+    <div class="uml-class">
+        <div class="header">Juego</div>
+        <div class="attributes">
+            <div class="section-title">Atributos</div>
+            <ul>
+                <li># numeroDeVidas: int</li>
+                <li># record: int</li>
+            </ul>
+        </div>
+        <div class="methods">
+            <div class="section-title">Métodos</div>
+            <ul>
+                <li>+ __init__(vidas: int)</li>
+                <li>+ reiniciaPartida(): void</li>
+                <li># actualizaRecord(): void</li>
+                <li># quitaVida(): bool</li>
+            </ul>
+        </div>
+        <div class="arrow-symbol">▲</div>
+        <div class="inheritance-text">hereda</div>
+        <div class="subclass-block">
+            <div class="subclass-title">JuegoAdivinaNumero</div>
+            <div class="attributes" style="border: none; padding: 5px 0;">
+                <div class="section-title">Atributos</div>
+                <ul>
+                    <li>- numeroAAdivinar: int</li>
+                </ul>
+            </div>
+            <div class="methods" style="padding: 5px 0;">
+                <div class="section-title">Métodos</div>
+                <ul>
+                    <li>+ __init__(vidas: int)</li>
+                    <li>+ juega(): void</li>
+                    <li># validaNumero(num: int): bool</li>
+                </ul>
+            </div>
+        </div>
+        <div class="arrow-symbol">▲</div>
+        <div class="inheritance-text">hereda / hereda</div>
+        <div class="two-columns">
+            <div class="column">
+                <div class="subclass-title">JuegoAdivinaPar</div>
+                <div class="attributes" style="border: none; padding: 5px 0;">
+                    <div class="section-title">Atributos</div>
+                    <ul>
+                        <li><em>(sin atributos)</em></li>
+                    </ul>
+                </div>
+                <div class="methods" style="padding: 5px 0;">
+                    <div class="section-title">Métodos</div>
+                    <ul>
+                        <li>+ __init__(vidas: int)</li>
+                        <li># validaNumero(num: int): bool</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="subclass-title">JuegoAdivinaImpar</div>
+                <div class="attributes" style="border: none; padding: 5px 0;">
+                    <div class="section-title">Atributos</div>
+                    <ul>
+                        <li><em>(sin atributos)</em></li>
+                    </ul>
+                </div>
+                <div class="methods" style="padding: 5px 0;">
+                    <div class="section-title">Métodos</div>
+                    <ul>
+                        <li>+ __init__(vidas: int)</li>
+                        <li># validaNumero(num: int): bool</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subclass-block" style="border-top: 2px solid #000; margin-top: 10px;">
+            <div class="subclass-title">Aplicacion</div>
+            <div class="attributes" style="border: none; padding: 5px 0;">
+                <div class="section-title">Atributos</div>
+                <ul>
+                    <li><em>(sin atributos)</em></li>
+                </ul>
+            </div>
+            <div class="methods" style="padding: 5px 0;">
+                <div class="section-title">Métodos</div>
+                <ul>
+                    <li>+ main(): void</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
