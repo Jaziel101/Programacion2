@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Estilos/estilos.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="canvas">
+
+        <div class="uml-box">
+            <div class="uml-header">Biblioteca</div>
+            <div class="uml-body">- nombre: str<br>- horario: Horario</div>
+            <div class="uml-methods">+ agregarLibro()<br>+ cerrar()</div>
+        </div>
+        <span class="relation">◆────</span>
+        <div class="uml-box">
+            <div class="uml-header">Horario</div>
+            <div class="uml-body">- dias: str<br>- apertura: str</div>
+            <div class="uml-methods">+ mostrar()</div>
+        </div>
+        
+        <br><br>
+
+        <div class="uml-box">
+            <div class="uml-header">Libro</div>
+            <div class="uml-body">- titulo: str<br>- isbn: str</div>
+            <div class="uml-methods">+ leer()</div>
+        </div>
+        <span class="relation">◇────</span>
+        <div class="uml-box">
+            <div class="uml-header">Pagina</div>
+            <div class="uml-body">- numero: int<br>- contenido: str</div>
+            <div class="uml-methods">+ mostrar()</div>
+        </div>
+
+        <p><small><b>Nota:</b> ◆ = Composición | ◇ = Agregación | ──── = Asociación</small></p>
+    </div>
+</div>
+</body>
+</html>

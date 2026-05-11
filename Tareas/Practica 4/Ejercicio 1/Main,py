@@ -1,0 +1,22 @@
+from Biblioteca import Libro, Autor, Estudiante, Biblioteca
+autor1 = Autor("Franz Tamayo", "Boliviana")
+estudiante1 = Estudiante("12345-LP", "Juan Perez")
+
+libro1 = Libro(
+    "La Prometida", 
+    "978-99905", 
+    ["Prólogo de la obra...", "Capítulo 1: El inicio...", "Fin del poema."]
+)
+
+mi_biblioteca = Biblioteca("Biblioteca Central UMSA", "Lunes a Viernes", "08:00", "20:00")
+
+mi_biblioteca.agregar_libro(libro1)
+mi_biblioteca.agregar_autor(autor1)
+
+mi_biblioteca.prestar_libro(estudiante1, libro1)
+
+mi_biblioteca.mostrar_estado()
+
+libro1.leer()
+
+mi_biblioteca.cerrar_biblioteca()
